@@ -1,0 +1,55 @@
+html,
+body {
+    height: 100vh; /* VIWERPORT */
+    width: 100vw;
+}
+
+
+header {
+    background-color: rgb(10, 88, 23);
+    height: 20vh;
+    border: 1px solid rgb(1, 27, 13);
+}
+
+#corpo {
+    background-color: rgb(78, 187, 145);
+    height: 70vh;
+    text-align: center;
+    border: 0px solid black;
+}
+
+footer {
+    background-color: rgb(158, 207, 84);
+    height: 10vh;
+    border: 1px solid black;
+}
+
+/*
+ Configurações css do menu principal de opções
+*/
+.menuPrincipal{
+    float: left;
+    font-size: 21px;
+    padding-left: 2vw;
+    transition: 0.2s;
+}
+
+.menuPrincipal ul li {
+    display: inline;
+    padding-left: 2vw;
+}
+
+.menuPrincipal ul li a{
+    text-align: center;
+    color: rgb(166, 216, 209);
+}
+
+.menuPrincipal ul li a:hover{
+    color: rgb(182, 94, 44);
+    font-size: 21px;
+    text-decoration: none;
+}
+.titulo {
+    text-align: center;
+    color: rgb(146, 207, 199);
+}
