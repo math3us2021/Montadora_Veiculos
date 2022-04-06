@@ -1,49 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
-    <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="/estilo/estilo.css">
+    <title> montadora </title>
 
-    <title> <%= title %> </title>
+   
+    <!-- Principal CSS do Bootstrap -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos customizados para esse template -->
+    <link href="jumbotron.css" rel="stylesheet">
   </head>
+
   <body>
-    
-    <header>
-        
-        <h1 class = 'titulo'>Menu Principal</h1>
-        <nav class="menuPrincipal">
-            <ul>
-                <li> <a href="#">Fiat</a> </li>
-                <li> <a href="#">Ford</a> </li>
-                <li> <a href="#">Chevrolet</a> </li>
-                <li> <a href="/VW/VWMenu">VW</a> </li>
-                <li> <a href="#">Hyndai</a> </li>
-            </ul>
 
-          </nav>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand"></a><img src="imagens/incon1.jpeg" alt="montadora_de_carros"  title="Montadora"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"> <span class="sr-only">(atual)</span></a>
+          </li>
+
+          <li class="nav-item">
+             <a class="nav-link" href="">Fiat</a>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link" href="#">Ford</a>
+          </li>
+
+          <li class="nav-item"> 
+            <a class="nav-link" href="/VW/VWMenu">VW</a>
+          </li>
+                
+          <li class="nav-item"> 
+            <a class="nav-link" href="#">Hyndai</a>
+          </li>
           
-        </header>
-        
-      <div id="corpo">
-      <img src="../views/vw/fiat.jpg">
-      <%= conteudo %>
-    </div>
 
-    <footer>
-      <%= autor %>
+       
+        
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main">
+
+      <!-- Principal jumbotron, para a principal mensagem de marketing ou call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <br>
+          <br>
+          <img src="imagens/montadora.jpeg" class="img-fluid" alt="Imagem responsiva">
+          <br>
+          <br>
+          <h1><strong>Montadora Brasil</strong> </h1>
+          <h2><strong>Entenda as maiores e melhores marcas de carros do Brasil </strong> </h2>
+          
+          <br>
+          <p>Entre o final dos anos 1950 e inicio dos 1960, começou a instalação da indústria automobilística no Brasil. Apesar de já ter automóveis pelas ruas, o país não tinha nenhuma fábrica do tipo. Hoje, geram centenas de milhares de empregos - segundo a Anfavea (Associação Nacional dos Fabricantes de Veículos Automotores), 2020 terminou com 1,3 milhão de empregados na indústria, direta e indiretamente, incluso caminhões, ônibus e máquinas agrícolas.
+
+            O fim dos anos 1990 e começo dos anos 2000 traz novos jogadores para o mercado, com a chegada da Toyota, Honda e Peugeot/Citroën, citando alguns exemplos. Outros fabricantes de instalam com o passar das décadas, como a BMW e a Caoa Chery. Além das fábricas de automóveis aqui listadas, ainda há fábricas de motores e transmissões, componentes e autopeças espalhadas pelo país.</p>
+
+          <p><a class="btn btn-primary btn-lg" href="https://motor1.uol.com.br/news/242153/fabricas-automoveis-brasil/" role="button">Mais Informações</a></p>
+          <div class="container">
+            <img src="imagens/rodape.jpeg" class="img-fluid" alt="Imagem responsiva">
+
+          </div>
+        </div>
+      </div>
+
+
+          
+    </main>
+
+    <br>
+
+    <footer class="container">
+      <p>&copy;Direitos reservados ás Montadoras Brasil  </p>
     </footer>
 
-    
-    <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <!-- Principal JavaScript do Bootstrap
+    ================================================== -->
+    <!-- Foi colocado no final para a página carregar mais rápido -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
   </body>
 </html>
